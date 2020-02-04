@@ -8,13 +8,21 @@ int main(){
 	int x = 6, y = 9;
 	cout << "Before swapping:\n";
 	cout << "x = " << x << ", y = " << y << "\n";
-	mySwap (x,y);
+	mySwap(x,y);
 	cout << "After swapping:\n";
 	cout << "x = " << x << ", y = " << y << "\n";
 	
 	return 0;
 }
+void mySwap(int &x,int &y){
+     
+    int z,a;
+	z=x; 
+	a=y;
+	y=z;
+	x=a;
 
+}
 //Write function definition here
 /*
 ??? mySwap (???){
